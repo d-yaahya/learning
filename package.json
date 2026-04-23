@@ -1,0 +1,40 @@
+{
+  "name": "yahya",
+  "version": "1.0.0",
+  "description": "learning",
+  "homepage": "https://github.com/d-yaahya/learning#readme",
+  "bugs": {
+    "url": "https://github.com/d-yaahya/learning/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d-yaahya/learning.git"
+  },
+  "license": "ISC",
+  "author": "yahya",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "goo": "webpack --mode production",
+    "serve": "webpack serve --mode development"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.2",
+    "@babel/preset-react": "^7.28.5",
+    "babel-loader": "^10.1.1",
+    "css-loader": "^7.1.4",
+    "css-minimizer-webpack-plugin": "^8.0.0",
+    "html-webpack-plugin": "^5.6.7",
+    "mini-css-extract-plugin": "^2.10.2",
+    "sass": "^1.99.0",
+    "sass-loader": "^16.0.7",
+    "webpack": "^5.106.2",
+    "webpack-cli": "^7.0.2",
+    "webpack-dev-server": "^5.2.3"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}
