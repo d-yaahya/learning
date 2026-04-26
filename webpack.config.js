@@ -35,6 +35,10 @@ export default {
         use: "babel-loader",
       },
       {
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
+      {
         test: /\.(sa|sc|c)ss$/i,
         use: [
           {
@@ -47,6 +51,20 @@ export default {
            "css-loader",
            "sass-loader"
         ],
+      },
+            {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: "./img/[name][ext]"
+        }
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: "./font/[name][ext]"
+        }
       },
       
     ],
