@@ -12,7 +12,7 @@
         <div class="container-fluid p-0">
             <nav class="navbar navbar-expand-lg main-navbar">
                 <div class="navbar-header">
-                <a href="#" class="navbar-brand">
+                <a href="index.html" class="navbar-brand">
                     <img src="./img/logo/noun-school-3652203.svg" alt="logo">
                 </a>
         </div>
@@ -35,7 +35,7 @@
 
             <ul class="navbar-nav mx-auto  text-center ">
             <li class="nav-item active">
-                <a href="#" class="nav-link">الصفحة الرئيسية</a>
+                <a href="index.html" class="nav-link">الصفحة الرئيسية</a>
             </li>
             <li class="nav-item">
                 <a href="#activities" class="nav-link">نشاطاتنا</a>
@@ -48,6 +48,11 @@
             </li>
             <li class="nav-item">
                 <a href="#contact" class="nav-link">تواصل معنا</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    تسجيل الدخول
+                </a>
             </li>
             </ul>
 
@@ -230,7 +235,7 @@
                     <div class="star-content">
                         <h4>يحيى العبدلي</h4>
                         <p>مرتبة التفوق: الأولى</p>
-                        <a href="#" class="star-btn">عرض الملف الكامل</a>
+                        <a href="stuodents1.html" class="star-btn">عرض الملف الكامل</a>
                     </div>
                     </div>
                 </div>
@@ -248,7 +253,7 @@
                     <div class="star-content">
                         <h4>ليلى ناصر</h4>
                         <p>مرتبة التفوق: الثانية</p>
-                        <a href="#" class="star-btn">عرض الملف الكامل</a>
+                        <a href="stuodents2.html" class="star-btn">عرض الملف الكامل</a>
                     </div>
                     </div>
                 </div>
@@ -311,6 +316,95 @@
 
         </div>
         </section>
+
+        <!--  تسجيل الدخول -->
+        <div class="modal fade auth-modal" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-body">
+
+                <h3 class="text-center mb-3">تسجيل الدخول</h3>
+
+                <form id="loginForm">
+                <div class="mb-3">
+                    <label>البريد الإلكتروني</label>
+                    <input type="email" id="loginEmail" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label>كلمة المرور</label>
+                    <input type="password" id="loginPassword" class="form-control" required>
+                </div>
+
+                <button type="submit" class="auth-btn w-100">تسجيل الدخول</button>
+
+                <div class="text-center mt-3">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal" data-bs-dismiss="modal">
+                    إنشاء حساب جديد
+                    </a>
+                </div>
+
+                <div class="text-center mt-2">
+                    <a href="#">هل نسيت كلمة المرور؟</a>
+                </div>
+
+                <p id="loginMessage" class="auth-message"></p>
+                </form>
+
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!--  إنشاء حساب -->
+        <div class="modal fade auth-modal" id="registerModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-body">
+
+                    <h3 class="text-center mb-3">إنشاء حساب جديد</h3>
+
+                    <form id="registerForm">
+                    <div class="mb-3">
+                        <label>الاسم</label>
+                        <input type="text" id="registerName" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label>تاريخ الميلاد</label>
+                        <input type="date" id="registerBirth" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label>البريد الإلكتروني</label>
+                        <input type="email" id="registerEmail" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label>كلمة المرور</label>
+                        <input type="password" id="registerPassword" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label>تأكيد كلمة المرور</label>
+                        <input type="password" id="confirmPassword" class="form-control" required>
+                    </div>
+
+                    <button type="submit" class="auth-btn w-100">إنشاء حساب جديد</button>
+
+                    <div class="text-center mt-3">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal">
+                        هل لديك حساب؟ تسجيل الدخول
+                        </a>
+                    </div>
+
+                    <p id="registerMessage" class="auth-message"></p>
+                    </form>
+
+                </div>
+                </div>
+            </div>
+        </div>
     </body>
 
     <footer class="main-footer">

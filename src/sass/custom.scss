@@ -1,4 +1,3 @@
-
 // Primary Colors
 $primary-navy: #1E2A5A;      // كحلي فاخر للعناوين والهيدر
 $primary-teal: #3AA6A6;      // تركواز تعليمي للأزرار والروابط
@@ -25,16 +24,18 @@ $gradient-main: linear-gradient(135deg, #1E2A5A 0%, #3AA6A6 100%);
 $gradient-soft: linear-gradient(135deg, #F8F4E8 0%, #A7D8DE 100%);
 $gradient-gold: linear-gradient(135deg, #D6A84F 0%, #F3E3B3 100%);
 
+
+// اساسات 
 html {
   scroll-behavior: smooth;
 }
-
+// اساسات 
 body {
   background-color: $cream;
   color: $text-dark;
   
 }
-
+// القائمة العلوية 
 .navbar {
   position: relative;
   width: 100%;
@@ -184,13 +185,15 @@ body {
         }
   }
 }
+// قائمة الجوال العلوية 
+
 .main-navbar {
   position: relative;
   width: 100%;
   transition: all .5s ease;
   z-index: 999;
 }
-
+// القائمة العلوية اعدادات النزول
 .main-navbar.scrolled {
   position: fixed;
   top: 0;
@@ -200,7 +203,6 @@ body {
   backdrop-filter: blur(10px);
   box-shadow: 0 5px 20px rgba(0,0,0,.15);
 }
-
 // سكشن الكاروسيل 
 .hero-carousel {
   width: 100%;
@@ -261,7 +263,6 @@ body {
     }
   }
 }
-
 // سكشن النشاطات 
 .activities {
   background-color: $cream;
@@ -305,7 +306,6 @@ body {
     }
   }
 }
-
 // سكشن التلاميذ 
 .students {
   background-color: $light-gray;
@@ -396,7 +396,6 @@ body {
     }
   }
 }
-
 // سكشن المتفوقين 
 .school-stars {
   background: $gradient-soft;
@@ -494,7 +493,6 @@ body {
     }
   }
 }
-
 // سكشن تواصل معنا 
 .contact {
   background-color: $cream;
@@ -571,7 +569,7 @@ body {
     }
   }
 }
-
+// الفوتر   
 .main-footer {
   background-color: $primary-navy;
   color: $white;
@@ -665,4 +663,334 @@ body {
 
   }
 
+}
+
+//------------------------
+
+// سكشن لمحة صفحة الطالب  
+.student-overview {
+  padding: 80px 0;
+  background: #f8fbff;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 50px;
+    align-items: center;
+  }
+
+  &__image {
+    border-radius: 28px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 20px 50px rgba(13, 110, 253, 0.12);
+
+    img {
+      width: 100%;
+      height: 430px;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  &__badge {
+    display: inline-block;
+    margin-bottom: 16px;
+    padding: 8px 18px;
+    border-radius: 50px;
+    background: #e7f1ff;
+    color: #0d6efd;
+    font-weight: 700;
+  }
+
+  h1 {
+    margin-bottom: 18px;
+    font-size: 42px;
+    font-weight: 800;
+    color: #172033;
+  }
+
+  &__desc {
+    max-width: 680px;
+    margin-bottom: 30px;
+    color: #667085;
+    font-size: 17px;
+    line-height: 1.9;
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+
+    div {
+      padding: 18px 20px;
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    }
+
+    strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #172033;
+      font-size: 15px;
+    }
+
+    span {
+      color: #667085;
+      font-size: 15px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__wrapper {
+      grid-template-columns: 1fr;
+    }
+
+    &__image img {
+      height: 360px;
+    }
+  }
+
+  @media (max-width: 575px) {
+    padding: 50px 0;
+
+    h1 {
+      font-size: 32px;
+    }
+
+    &__info {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+// سكشن الجدول صفحة الطالب  
+.student-grades {
+  padding: 80px 0;
+  background: $cream;
+
+  .section-title {
+    span {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 7px 18px;
+      border-radius: 30px;
+      background-color: rgba(214, 168, 79, 0.18);
+      color: $primary-navy;
+      font-weight: bold;
+    }
+
+    h2 {
+      color: $primary-navy;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    p {
+      color: $text-muted;
+      margin: 0;
+    }
+  }
+
+  &__table {
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: $white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    thead {
+      background: $gradient-main;
+
+      th {
+        color: $white;
+        padding: 18px;
+        font-size: 17px;
+      }
+    }
+
+    tbody {
+      tr {
+        border-bottom: 1px solid rgba(0, 0, 0, .08);
+        transition: .3s;
+
+        &:hover {
+          background-color: rgba(167, 216, 222, .25);
+        }
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+
+      td {
+        padding: 18px;
+        color: $text-dark;
+        font-size: 16px;
+
+        &:last-child {
+          font-weight: 800;
+          color: $primary-teal;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 575px) {
+    padding: 55px 0;
+
+    &__table {
+      overflow-x: auto;
+
+      table {
+        min-width: 520px;
+      }
+    }
+  }
+}
+
+// سكشن النصائح صفحة الطالب  
+.success-tips {
+  padding: 80px 0;
+  background: $gradient-soft;
+
+  &__header {
+    max-width: 700px;
+    margin: 0 auto 45px;
+
+    span {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 7px 18px;
+      border-radius: 30px;
+      background-color: rgba(30, 42, 90, 0.1);
+      color: $primary-navy;
+      font-weight: bold;
+    }
+
+    h2 {
+      color: $primary-navy;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    p {
+      color: $text-muted;
+      margin: 0;
+      line-height: 1.8;
+    }
+  }
+
+  .success-tip-card {
+    height: 100%;
+    padding: 30px 22px;
+    text-align: center;
+    background-color: $white;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+    transition: .3s ease;
+
+    i {
+      width: 62px;
+      height: 62px;
+      margin-bottom: 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: $gradient-main;
+      color: $white;
+      font-size: 24px;
+    }
+
+    h4 {
+      color: $primary-navy;
+      font-weight: 800;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    p {
+      color: $text-muted;
+      font-size: 15px;
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    &:hover {
+      transform: translateY(-8px);
+
+      i {
+        background: $gradient-gold;
+        color: $primary-navy;
+      }
+    }
+  }
+
+  @media (max-width: 575px) {
+    padding: 55px 0;
+  }
+}
+
+//-------------------
+// اعدادات صفحات الدخول والتسجيل  
+.auth-modal {
+  .modal-content {
+    border-radius: 22px;
+    border: none;
+    padding: 20px;
+  }
+
+  h3 {
+    color: $primary-navy;
+    font-weight: 800;
+  }
+
+  label {
+    margin-bottom: 6px;
+    color: $primary-navy;
+    font-weight: 700;
+  }
+
+  .form-control {
+    height: 46px;
+    border-radius: 10px;
+  }
+
+  .auth-btn {
+    border: none;
+    background: $gradient-main;
+    color: $white;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+
+  a {
+    color: $primary-teal;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .auth-message {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 700;
+
+    &.success {
+      color: $success;
+    }
+
+    &.error {
+      color: $danger;
+    }
+  }
 }

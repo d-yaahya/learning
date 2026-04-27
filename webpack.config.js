@@ -84,6 +84,7 @@ export default {
       filename: "stuodents2.html",
        template: "./src/stuodents2.html"
        }),
+       
        new MiniCssExtractPlugin({
       filename: "css/style.css",
     }),
