@@ -2,7 +2,7 @@
   "name": "yahya",
   "version": "1.0.0",
   "description": "learning",
-  "homepage": "https://github.com/d-yaahya/learning#readme",
+
   "bugs": {
     "url": "https://github.com/d-yaahya/learning/issues"
   },
@@ -16,7 +16,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "goo": "webpack --mode production",
+    "build": "webpack --mode production",
     "serve": "webpack serve --mode development"
   },
   "devDependencies": {
