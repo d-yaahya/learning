@@ -1,0 +1,55 @@
+@use "../abstracts/variables" as *;
+
+// اعدادات صفحات الدخول والتسجيل  
+.auth-modal {
+  .modal-content {
+    border-radius: 22px;
+    border: none;
+    padding: 20px;
+  }
+
+  h3 {
+    color: $primary-navy;
+    font-weight: 800;
+  }
+
+  label {
+    margin-bottom: 6px;
+    color: $primary-navy;
+    font-weight: 700;
+  }
+
+  .form-control {
+    height: 46px;
+    border-radius: 10px;
+  }
+
+  .auth-btn {
+    border: none;
+    background: $gradient-main;
+    color: $white;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+
+  a {
+    color: $primary-teal;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .auth-message {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 700;
+
+    &.success {
+      color: $success;
+    }
+
+    &.error {
+      color: $danger;
+    }
+  }
+}

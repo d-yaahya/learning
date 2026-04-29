@@ -1,0 +1,10 @@
+@use "../abstracts/variables" as *;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $cream ;
+  color: $text-dark;
+}

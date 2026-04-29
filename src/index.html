@@ -7,69 +7,72 @@
     <title>yahya</title>
     
 </head>
-    <header>
-        <!-- القائمة العلوية -->
-        <div class="container-fluid p-0">
-            <nav class="navbar navbar-expand-lg main-navbar">
-                <div class="navbar-header">
-                <a href="index.html" class="navbar-brand">
-                    <img src="./img/logo/noun-school-3652203.svg" alt="logo">
-                </a>
-        </div>
-
-        <button class="navbar-toggler" type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#navbarCollapse"
-        aria-controls="navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="offcanvas offcanvas-end mobile-menu" tabindex="-1" id="navbarCollapse">
-
-        <div class="offcanvas-header">
-            <img src="./img/logo/noun-school-3652203.svg" alt="logo" class="offcanvas-logo">
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-        </div>
-
-        <div class="offcanvas-body">
-
-            <ul class="navbar-nav mx-auto  text-center ">
-            <li class="nav-item active">
-                <a href="index.html" class="nav-link">الصفحة الرئيسية</a>
-            </li>
-            <li class="nav-item">
-                <a href="#activities" class="nav-link">نشاطاتنا</a>
-            </li>
-            <li class="nav-item">
-                <a href="#students" class="nav-link">تلاميذنا</a>
-            </li>
-            <li class="nav-item">
-                <a href="#students2" class="nav-link">نجوم المدرسة</a>
-            </li>
-            <li class="nav-item">
-                <a href="#contact" class="nav-link">تواصل معنا</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#loginModal">
-                    تسجيل الدخول
-                </a>
-            </li>
-            </ul>
-
-            <form action="" class="d-flex inline-form">
-            <button type="submit" class="btn search-btn">ابحث</button>
-            <input type="search" class="form-control" placeholder="search...">
-            </form>
-
-        </div>
-        </div>
-
-    </nav>
-        </div>
-    </header>
 
     <body>
-        <!-- السلايدر -->
+                 <!-- القائمة العلوية -->
+        <header>
+            
+            <div class="container-fluid p-0">
+                <nav class="navbar navbar-expand-lg main-navbar">
+                    <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="./img/logo/noun-school-3652203.svg" alt="logo">
+                    </a>
+            </div>
+
+            <button class="navbar-toggler" type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end mobile-menu" tabindex="-1" id="navbarCollapse">
+
+            <div class="offcanvas-header">
+                <img src="./img/logo/noun-school-3652203.svg" alt="logo" class="offcanvas-logo">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body">
+
+                <ul class="navbar-nav mx-auto  text-center ">
+                <li class="nav-item active">
+                    <a href="index.html" class="nav-link">الصفحة الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#activities" class="nav-link">نشاطاتنا</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#students" class="nav-link">تلاميذنا</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#students2" class="nav-link">نجوم المدرسة</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">تواصل معنا</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        تسجيل الدخول
+                    </a>
+                </li>
+                </ul>
+
+                <form action="" class="d-flex inline-form">
+                <button type="submit" class="btn search-btn">ابحث</button>
+                <input type="search" class="form-control" placeholder="search...">
+                </form>
+
+            </div>
+            </div>
+
+        </nav>
+            </div>
+        </header>
+
+        <main>
+                <!-- السلايدر -->
         <section class="hero-carousel">
             <div id="schoolCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -104,7 +107,7 @@
             </div>
         </section>
         
-        <!-- سكشن النشاطات -->
+                <!-- سكشن النشاطات -->
         <section id="activities" class="activities py-5">
             <div class="container">
                 
@@ -139,7 +142,7 @@
             </div>
         </section>
 
-        <!-- سكشن التلاميذ -->
+                <!-- سكشن التلاميذ -->
         <section id="students" class="students py-5">
             <div class="container">
 
@@ -207,7 +210,7 @@
             </div>
         </section>
 
-        <!-- سكشن المميزين -->
+                 <!-- سكشن المميزين -->
         <section id="students2" class="school-stars py-5">
             <div class="container">
 
@@ -263,7 +266,7 @@
             </div>
         </section>
 
-        <!-- سكشن تواصل معنا -->
+                <!-- سكشن تواصل معنا -->
         <section id="contact" class="contact py-5">
         <div class="container">
 
@@ -317,143 +320,149 @@
         </div>
         </section>
 
-        <!--  تسجيل الدخول -->
-        <div class="modal fade auth-modal" id="loginModal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-            <div class="modal-body">
+                <!-- تسجيل الدخول -->
+                <div class="modal fade auth-modal" id="loginModal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
 
-                <h3 class="text-center mb-3">تسجيل الدخول</h3>
+                    <div class="modal-body">
 
-                <form id="loginForm">
-                <div class="mb-3">
-                    <label>البريد الإلكتروني</label>
-                    <input type="email" id="loginEmail" class="form-control" required>
-                </div>
+                        <h3 class="text-center mb-3">تسجيل الدخول</h3>
 
-                <div class="mb-3">
-                    <label>كلمة المرور</label>
-                    <input type="password" id="loginPassword" class="form-control" required>
-                </div>
+                        <form id="loginForm">
 
-                <button type="submit" class="auth-btn w-100">تسجيل الدخول</button>
+                        <div class="mb-3">
+                            <label  for="loginEmail">البريد الإلكتروني</label>
+                            <input type="email" id="loginEmail" class="form-control" required>
+                        </div>
 
-                <div class="text-center mt-3">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal" data-bs-dismiss="modal">
-                    إنشاء حساب جديد
-                    </a>
-                </div>
+                        <div class="mb-3">
+                            <label for="loginPassword">كلمة المرور</label>
+                            <input type="password" id="loginPassword" class="form-control" required>
+                        </div>
 
-                <div class="text-center mt-2">
-                    <a href="#">هل نسيت كلمة المرور؟</a>
-                </div>
-
-                <p id="loginMessage" class="auth-message"></p>
-                </form>
-
-            </div>
-            </div>
-        </div>
-        </div>
-
-        <!--  إنشاء حساب -->
-        <div class="modal fade auth-modal" id="registerModal" tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                <div class="modal-body">
-
-                    <h3 class="text-center mb-3">إنشاء حساب جديد</h3>
-
-                    <form id="registerForm">
-                    <div class="mb-3">
-                        <label>الاسم</label>
-                        <input type="text" id="registerName" class="form-control" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label>تاريخ الميلاد</label>
-                        <input type="date" id="registerBirth" class="form-control" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label>البريد الإلكتروني</label>
-                        <input type="email" id="registerEmail" class="form-control" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label>كلمة المرور</label>
-                        <input type="password" id="registerPassword" class="form-control" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label>تأكيد كلمة المرور</label>
-                        <input type="password" id="confirmPassword" class="form-control" required>
-                    </div>
-
-                    <button type="submit" class="auth-btn w-100">إنشاء حساب جديد</button>
-
-                    <div class="text-center mt-3">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal">
-                        هل لديك حساب؟ تسجيل الدخول
+                        <button type="submit" class="auth-btn w-100">تسجيل الدخول</button>
+                        <div class="text-center mt-2">
+                        <a href="#" class="forgot-password-link">
+                            هل نسيت كلمة المرور؟
                         </a>
+                        </div>
+
+                        <div class="text-center mt-3">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal" data-bs-dismiss="modal">
+                            إنشاء حساب جديد
+                            </a>
+                        </div>
+
+                        <p id="loginMessage" class="auth-message"></p>
+
+                        </form>
+
                     </div>
 
-                    <p id="registerMessage" class="auth-message"></p>
-                    </form>
-
+                    </div>
                 </div>
+                </div>
+
+                <!--  إنشاء حساب -->
+                <div class="modal fade auth-modal" id="registerModal" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                        <div class="modal-body">
+
+                            <h3 class="text-center mb-3">إنشاء حساب جديد</h3>
+
+                            <form id="registerForm">
+                            <div class="mb-3">
+                                <label for="registerName">الاسم</label>
+                                <input type="text" id="registerName" class="form-control" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="registerBirth">تاريخ الميلاد</label>
+                                <input type="date" id="registerBirth" class="form-control" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label  for="registerEmail">البريد الإلكتروني</label>
+                                <input type="email" id="registerEmail" class="form-control" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="registerPassword">كلمة المرور</label>
+                                <input type="password" id="registerPassword" class="form-control" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="confirmPassword">تأكيد كلمة المرور</label>
+                                <input type="password" id="confirmPassword" class="form-control" required>
+                            </div>
+
+                            <button type="submit" class="auth-btn w-100">إنشاء حساب جديد</button>
+
+                            <div class="text-center mt-3">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal">
+                                هل لديك حساب؟ تسجيل الدخول
+                                </a>
+                            </div>
+
+                            <p id="registerMessage" class="auth-message"></p>
+                            </form>
+
+                        </div>
+                        </div>
+                    </div>
+                </div>
+        </main>
+
+        <footer class="main-footer">
+
+        <div class="container">
+            <div class="row text-center text-lg-start">
+
+            <!-- عن الموقع -->
+            <div class="col-lg-4 mb-4">
+                <h5 class="footer-title">
+                علّمني <i class="fa-solid fa-graduation-cap"></i>
+                </h5>
+                <p>
+                مدرسة ابتدائية متميزة تهدف إلى بناء جيل واعٍ ومتعلم
+                </p>
+            </div>
+
+            <!-- روابط سريعة -->
+            <div class="col-lg-4 mb-4">
+                <h5 class="footer-title">روابط سريعة</h5>
+                <ul class="footer-links">
+                <li><a href="#">من نحن</a></li>
+                <li><a href="#">النشاطات</a></li>
+                <li><a href="#">الطلاب</a></li>
+                <li><a href="#">تواصل معنا</a></li>
+                </ul>
+            </div>
+
+            <!-- السوشيال -->
+            <div class="col-lg-4 mb-4 text-center">
+                <h5 class="footer-title">تابعنا</h5>
+
+                <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                 </div>
             </div>
+
+            </div>
+
+            <hr>
+
+            <!-- الحقوق -->
+            <div class="footer-bottom text-center">
+            جميع الحقوق محفوظة منصة علّمني © <span id="year"></span>
+            </div>
+
         </div>
+        </footer>
     </body>
-
-    <footer class="main-footer">
-
-    <div class="container">
-        <div class="row text-center text-lg-start">
-
-        <!-- عن الموقع -->
-        <div class="col-lg-4 mb-4">
-            <h5 class="footer-title">
-            علّمني <i class="fa-solid fa-graduation-cap"></i>
-            </h5>
-            <p>
-            مدرسة ابتدائية متميزة تهدف إلى بناء جيل واعٍ ومتعلم
-            </p>
-        </div>
-
-        <!-- روابط سريعة -->
-        <div class="col-lg-4 mb-4">
-            <h5 class="footer-title">روابط سريعة</h5>
-            <ul class="footer-links">
-            <li><a href="#">من نحن</a></li>
-            <li><a href="#">النشاطات</a></li>
-            <li><a href="#">الطلاب</a></li>
-            <li><a href="#">تواصل معنا</a></li>
-            </ul>
-        </div>
-
-        <!-- السوشيال -->
-        <div class="col-lg-4 mb-4 text-center">
-            <h5 class="footer-title">تابعنا</h5>
-
-            <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            </div>
-        </div>
-
-        </div>
-
-        <hr>
-
-        <!-- الحقوق -->
-        <div class="footer-bottom text-center">
-        جميع الحقوق محفوظة منصة علّمني © <span id="year"></span>
-        </div>
-
-    </div>
-    </footer>
 </html>

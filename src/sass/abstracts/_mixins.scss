@@ -1,0 +1,11 @@
+@use "sass:map";
+@use "variables" as *;
+
+@mixin student-theme($name) {
+  $theme: map.get($students-themes, $name);
+
+  --student-primary: #{map.get($theme, primary)};
+  --student-secondary: #{map.get($theme, secondary)};
+  --student-bg: #{map.get($theme, bg)};
+  --student-text: #{map.get($theme, text)};
+}

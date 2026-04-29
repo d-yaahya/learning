@@ -1,0 +1,62 @@
+@use "../abstracts/variables" as *;
+
+// سكشن الكاروسيل 
+.hero-carousel {
+  width: 100%;
+  overflow: hidden;
+
+  .carousel {
+    position: relative;
+
+    .carousel-item {
+      height: clamp(260px, 55vw, 620px);
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+      }
+    }
+    
+      .carousel-indicators {
+            bottom: 18px;
+
+            button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color:$primary-navy;
+            }
+        }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      opacity: 0;
+      transition: .3s ease;
+    }
+
+    &:hover {
+      .carousel-control-prev,
+      .carousel-control-next {
+        opacity: 1;
+      }
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 45px;
+      height: 45px;
+      background-color: $primary-navy;
+      border-radius: 50%;
+      background-size: 55%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .carousel-item {
+      height: 350px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@use "../abstracts/variables" as *;
+
+
+// سكشن النشاطات 
+.activities {
+  background-color:  $cream ;
+
+  h2 {
+    color: $primary-navy;
+    font-weight: bold;
+  }
+
+  .activity-box {
+    background: $white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: .3s;
+
+    i {
+      font-size: 40px;
+      color: $primary-teal;
+      margin-bottom: 15px;
+    }
+
+    h4 {
+      color: $primary-navy;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: $text-muted;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0,0,0,.12);
+
+      i {
+        color: $gold;
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+@use "../abstracts/variables" as *;
+
+// سكشن تواصل معنا 
+.contact {
+  background-color:  $cream;
+
+  h2 {
+    color: $primary-navy;
+    font-weight: bold;
+  }
+
+  .map-box {
+    height: 100%;
+    min-height: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  }
+
+  .contact-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    transition: .3s;
+
+    i {
+      font-size: 22px;
+    }
+
+    h5 {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    p {
+      margin: 0;
+      color: $text-muted;
+      font-size: 14px;
+    }
+
+    &:hover {
+      transform: translateX(-5px);
+    }
+  }
+
+  .phone {
+    background-color: rgba(58,166,166,.15);
+
+    i {
+      color: $primary-teal;
+    }
+  }
+
+  .email {
+    background-color: rgba(214,168,79,.15);
+
+    i {
+      color: $gold;
+    }
+  }
+
+  .address {
+    background-color: rgba(30,42,90,.1);
+
+    i {
+      color: $primary-navy;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .map-box {
+      min-height: 250px;
+    }
+  }
+}

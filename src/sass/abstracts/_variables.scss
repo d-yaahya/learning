@@ -1,0 +1,38 @@
+
+
+
+$primary-navy: #1E2A5A;
+$primary-teal: #3AA6A6;
+$primary-sky: #A7D8DE;
+
+$gold: #D6A84F;
+$soft-gold: #F3E3B3;
+
+$white: #FFFFFF;
+$cream: #F8F4E8;
+$light-gray: #F2F5F7;
+$text-dark: #1F2933;
+$text-muted: #6B7280;
+
+$success: #2E8B57;
+$warning: #F2B84B;
+$danger: #C0392B;
+
+$gradient-main: linear-gradient(135deg, #1E2A5A 0%, #3AA6A6 100%);
+$gradient-soft: linear-gradient(135deg, #F8F4E8 0%, #A7D8DE 100%);
+$gradient-gold: linear-gradient(135deg, #D6A84F 0%, #F3E3B3 100%);
+
+$students-themes: (
+  yahya: (
+    primary: #1E2A5A,
+    secondary: #D6A84F,
+    bg: #F8F4E8,
+    text: #1F2933
+  ),
+  laila: (
+    primary: #7B3F8C,
+    secondary: #E85D9E,
+    bg: #FDF0F7,
+    text: #2E1A35
+  )
+);

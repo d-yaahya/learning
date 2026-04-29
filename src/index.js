@@ -3,50 +3,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./css/style.css";
 import "./sass/custom.scss";
 import '@fortawesome/fontawesome-free/js/all.min.js';
+import $ from "jquery";
 
-document.addEventListener("DOMContentLoaded", function () {
-  const navbar = document.querySelector(".main-navbar");
-  const slider = document.querySelector(".hero-carousel");
-  const year = document.getElementById("year");
-
-  if (navbar) {
-    window.addEventListener("scroll", function () {
-      const scrollPoint = slider ? slider.offsetHeight : 80;
-
-      if (window.scrollY > scrollPoint) {
-        navbar.classList.add("scrolled");
-      } else {
-        navbar.classList.remove("scrolled");
-      }
-    });
-  }
-
-  if (year) {
-    year.textContent = new Date().getFullYear();
-  }
+$(window).scroll(function () {
+  $(".main-navbar").toggleClass("scrolled", $(this).scrollTop() > 50);
 });
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  const navbar = document.querySelector(".main-navbar");
-  const slider = document.querySelector(".hero-carousel");
-  const year = document.getElementById("year");
-
-  if (navbar) {
-    window.addEventListener("scroll", function () {
-      const scrollPoint = slider ? slider.offsetHeight : 80;
-
-      if (window.scrollY > scrollPoint) {
-        navbar.classList.add("scrolled");
-      } else {
-        navbar.classList.remove("scrolled");
-      }
-    });
-  }
-
+const year = document.getElementById("year");
   if (year) {
     year.textContent = new Date().getFullYear();
   }
+
 
   // تسجيل حساب جديد
   const registerForm = document.getElementById("registerForm");
@@ -121,4 +89,3 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
-});

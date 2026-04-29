@@ -1,0 +1,97 @@
+@use "../abstracts/variables" as *;
+
+// الفوتر   
+.main-footer {
+  background-color: $primary-navy;
+  color: $white;
+  padding: 50px 0 20px;
+
+  .footer-title {
+    text-align: right;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  p {
+    text-align: right;
+    color: rgba(255,255,255,.7);
+    font-size: 14px;
+  }
+
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgba(255,255,255,.7);
+      font-size: 14px;
+      transition: .3s;
+
+      &:hover {
+        color: $gold;
+      }
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+
+    a {
+      width: 35px;
+      height: 35px;
+      background-color: rgba(255,255,255,.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+      transition: .3s;
+
+      &:hover {
+        background-color: $gold;
+        color: $primary-navy;
+      }
+    }
+  }
+
+  hr {
+    border-color: rgba(255,255,255,.2);
+    margin: 25px 0;
+  }
+
+  .footer-bottom {
+    font-size: 13px;
+    color: rgba(255,255,255,.6);
+  }
+}
+@media (max-width: 991px) {
+
+  .main-footer {
+
+    text-align: center;
+
+    .social-icons {
+      justify-content: center;
+    }
+
+    .footer-links {
+      text-align: center;
+    }
+
+    .row > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+  }
+
+}

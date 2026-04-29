@@ -2,7 +2,6 @@
   "name": "yahya",
   "version": "1.0.0",
   "description": "learning",
-
   "bugs": {
     "url": "https://github.com/d-yaahya/learning/issues"
   },
@@ -38,6 +37,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.2.0",
     "@fortawesome/fontawesome-svg-core": "^7.2.0",
-    "bootstrap": "^5.3.8"
+    "bootstrap": "^5.3.8",
+    "jquery": "^4.0.0"
   }
 }
